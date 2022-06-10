@@ -1,0 +1,203 @@
+http: [03.06.2022 18:32:42] GET /favicon.ico 404 5.205 ms 
+{}
+
+http: [03.06.2022 18:34:36] POST /menus 200 3.300 ms 
+{
+  "title": "Dinner",
+  "photo": "https://picture.com/32x32",
+  "isPublish": false
+}
+
+http: [03.06.2022 18:34:43] POST /menus 200 1.066 ms 
+{
+  "title": "Dinner",
+  "photo": "https://picture.com/32x32",
+  "isPublish": false
+}
+
+http: [03.06.2022 18:34:46] GET /menus 200 2.648 ms 
+{}
+
+http: [03.06.2022 18:35:17] GET /menus 200 6.518 ms 
+{}
+
+http: [03.06.2022 18:54:02] GET /menus 200 10.703 ms 
+{}
+
+http: [03.06.2022 18:54:16] PUT /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d1 200 19.045 ms 
+{
+  "title": "Lunch",
+  "photo": "https://picture.com/32x32",
+  "isPublish": true
+}
+
+http: [03.06.2022 18:54:25] GET /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d1 200 9.347 ms 
+{}
+
+http: [03.06.2022 18:54:33] GET /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d2 200 9.829 ms 
+{}
+
+http: [03.06.2022 18:54:34] GET /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d2 200 0.665 ms 
+{}
+
+http: [03.06.2022 18:55:12] POST /menus 200 3.177 ms 
+{
+  "title": "Dinner",
+  "photo": "https://picture.com/32x32",
+  "isPublish": false
+}
+
+http: [03.06.2022 18:55:27] GET /menus 200 1.016 ms 
+{}
+
+http: [03.06.2022 18:55:36] GET /menus 200 6.877 ms 
+{}
+
+http: [03.06.2022 18:56:41] POST /categories 200 10.033 ms 
+{
+  "menuId": "2c878543-ea83-4ca8-a3d7-8a4f4df231d1",
+  "title": "Alcohol",
+  "photo": "https://picture.com/32x32",
+  "isVisible": true
+}
+
+http: [03.06.2022 18:56:53] GET /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d1/categories 200 8.175 ms 
+{}
+
+http: [03.06.2022 18:59:05] DELETE /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d1 200 3.441 ms 
+{}
+
+http: [03.06.2022 18:59:36] GET /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d1/categories 200 3.284 ms 
+{}
+
+http: [03.06.2022 18:59:40] DELETE /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d1 200 2.488 ms 
+{}
+
+http: [03.06.2022 18:59:52] GET /categories 200 5.052 ms 
+{}
+
+http: [03.06.2022 19:00:23] GET /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d1/categories 200 0.785 ms 
+{}
+
+http: [03.06.2022 19:00:30] DELETE /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d1 200 0.509 ms 
+{}
+
+http: [03.06.2022 19:00:41] GET /categories 200 4.803 ms 
+{}
+
+http: [03.06.2022 19:01:36] GET /categories 200 40.582 ms 
+{}
+
+http: [03.06.2022 19:01:46] POST /menus 200 0.441 ms 
+{
+  "title": "Dinner",
+  "photo": "https://picture.com/32x32",
+  "isPublish": false
+}
+
+http: [03.06.2022 19:01:50] GET /menus 200 0.476 ms 
+{}
+
+http: [03.06.2022 19:02:09] POST /menus 200 0.557 ms 
+{
+  "title": "Dinner",
+  "photo": "https://picture.com/32x32",
+  "isPublish": false
+}
+
+http: [03.06.2022 19:02:11] GET /menus 200 5.143 ms 
+{}
+
+http: [03.06.2022 19:02:15] GET /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d2 200 0.699 ms 
+{}
+
+http: [03.06.2022 19:02:20] PUT /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d1 200 2.826 ms 
+{
+  "title": "Lunc",
+  "photo": "https://picture.com/32x32",
+  "isPublish": true
+}
+
+http: [03.06.2022 19:02:22] GET /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d1/categories 200 1.122 ms 
+{}
+
+http: [03.06.2022 19:02:38] GET /menus/1c898543-ea83-4ca8-a3d7-8a4f4df261d1/categories 200 0.992 ms 
+{}
+
+http: [03.06.2022 19:02:51] POST /menus 200 0.711 ms 
+{
+  "title": "Dinner",
+  "photo": "https://picture.com/32x32",
+  "isPublish": false
+}
+
+error: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1380:16)
+    at listenInCluster (node:net:1428:12)
+    at Server.listen (node:net:1516:7)
+    at Function.listen (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\dimam\OneDrive\Рабочий стол\laba4\src\server.ts:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\ts-node\src\index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32) {"date":"Fri Jun 03 2022 19:03:19 GMT+0300 (Москва, стандартное время)","error":{"address":"::","code":"EADDRINUSE","errno":-4091,"port":4000,"syscall":"listen"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1530244},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts"],"cwd":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":2034227,"external":5264155,"heapTotal":154935296,"heapUsed":126270952,"rss":193421312},"pid":6300,"uid":null,"version":"v18.2.0"},"stack":"Error: listen EADDRINUSE: address already in use :::4000\n    at Server.setupListenHandle [as _listen2] (node:net:1380:16)\n    at listenInCluster (node:net:1428:12)\n    at Server.listen (node:net:1516:7)\n    at Function.listen (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts:8:5)\n    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n    at Module.m._compile (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts:1455:23)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts:1458:12)\n    at Module.load (node:internal/modules/cjs/loader:981:32)","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1380,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1428,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":1516,"method":"listen","native":false},{"column":24,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\express\\lib\\application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":5,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1105,"method":"_compile","native":false},{"column":23,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts","function":"Module.m._compile","line":1455,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1159,"method":".js","native":false},{"column":12,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1458,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":981,"method":"load","native":false}]}
+error: undefined {"address":"::","code":"EADDRINUSE","errno":-4091,"port":4000,"syscall":"listen"}
+error: error
+error: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1380:16)
+    at listenInCluster (node:net:1428:12)
+    at Server.listen (node:net:1516:7)
+    at Function.listen (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\dimam\OneDrive\Рабочий стол\laba4\src\server.ts:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\ts-node\src\index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32) {"date":"Fri Jun 03 2022 19:03:43 GMT+0300 (Москва, стандартное время)","error":{"address":"::","code":"EADDRINUSE","errno":-4091,"port":4000,"syscall":"listen"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1530268},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts"],"cwd":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":2026035,"external":5255963,"heapTotal":155000832,"heapUsed":126217112,"rss":186802176},"pid":6152,"uid":null,"version":"v18.2.0"},"stack":"Error: listen EADDRINUSE: address already in use :::4000\n    at Server.setupListenHandle [as _listen2] (node:net:1380:16)\n    at listenInCluster (node:net:1428:12)\n    at Server.listen (node:net:1516:7)\n    at Function.listen (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts:8:5)\n    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n    at Module.m._compile (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts:1455:23)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts:1458:12)\n    at Module.load (node:internal/modules/cjs/loader:981:32)","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1380,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1428,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":1516,"method":"listen","native":false},{"column":24,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\express\\lib\\application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":5,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1105,"method":"_compile","native":false},{"column":23,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts","function":"Module.m._compile","line":1455,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1159,"method":".js","native":false},{"column":12,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1458,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":981,"method":"load","native":false}]}
+error: undefined {"address":"::","code":"EADDRINUSE","errno":-4091,"port":4000,"syscall":"listen"}
+error: error
+error: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1380:16)
+    at listenInCluster (node:net:1428:12)
+    at Server.listen (node:net:1516:7)
+    at Function.listen (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\dimam\OneDrive\Рабочий стол\laba4\src\server.ts:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\ts-node\src\index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32) {"date":"Fri Jun 03 2022 19:03:56 GMT+0300 (Москва, стандартное время)","error":{"address":"::","code":"EADDRINUSE","errno":-4091,"port":4000,"syscall":"listen"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1530281},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts"],"cwd":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":2034227,"external":5264155,"heapTotal":154935296,"heapUsed":126311656,"rss":194416640},"pid":4400,"uid":null,"version":"v18.2.0"},"stack":"Error: listen EADDRINUSE: address already in use :::4000\n    at Server.setupListenHandle [as _listen2] (node:net:1380:16)\n    at listenInCluster (node:net:1428:12)\n    at Server.listen (node:net:1516:7)\n    at Function.listen (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts:8:5)\n    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n    at Module.m._compile (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts:1455:23)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts:1458:12)\n    at Module.load (node:internal/modules/cjs/loader:981:32)","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1380,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1428,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":1516,"method":"listen","native":false},{"column":24,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\express\\lib\\application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":5,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1105,"method":"_compile","native":false},{"column":23,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts","function":"Module.m._compile","line":1455,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1159,"method":".js","native":false},{"column":12,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1458,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":981,"method":"load","native":false}]}
+error: undefined {"address":"::","code":"EADDRINUSE","errno":-4091,"port":4000,"syscall":"listen"}
+error: error
+error: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1380:16)
+    at listenInCluster (node:net:1428:12)
+    at Server.listen (node:net:1516:7)
+    at Function.listen (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\dimam\OneDrive\Рабочий стол\laba4\src\server.ts:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\ts-node\src\index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32) {"date":"Fri Jun 03 2022 19:04:07 GMT+0300 (Москва, стандартное время)","error":{"address":"::","code":"EADDRINUSE","errno":-4091,"port":4000,"syscall":"listen"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1530292},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts"],"cwd":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":1996669,"external":5226597,"heapTotal":155262976,"heapUsed":125459616,"rss":194433024},"pid":3716,"uid":null,"version":"v18.2.0"},"stack":"Error: listen EADDRINUSE: address already in use :::4000\n    at Server.setupListenHandle [as _listen2] (node:net:1380:16)\n    at listenInCluster (node:net:1428:12)\n    at Server.listen (node:net:1516:7)\n    at Function.listen (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts:8:5)\n    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n    at Module.m._compile (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts:1455:23)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts:1458:12)\n    at Module.load (node:internal/modules/cjs/loader:981:32)","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1380,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1428,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":1516,"method":"listen","native":false},{"column":24,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\express\\lib\\application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":5,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1105,"method":"_compile","native":false},{"column":23,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts","function":"Module.m._compile","line":1455,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1159,"method":".js","native":false},{"column":12,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1458,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":981,"method":"load","native":false}]}
+error: undefined {"address":"::","code":"EADDRINUSE","errno":-4091,"port":4000,"syscall":"listen"}
+error: error
+error: uncaughtException: listen EADDRINUSE: address already in use :::4000
+Error: listen EADDRINUSE: address already in use :::4000
+    at Server.setupListenHandle [as _listen2] (node:net:1380:16)
+    at listenInCluster (node:net:1428:12)
+    at Server.listen (node:net:1516:7)
+    at Function.listen (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\express\lib\application.js:618:24)
+    at Object.<anonymous> (C:\Users\dimam\OneDrive\Рабочий стол\laba4\src\server.ts:8:5)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Module.m._compile (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\ts-node\src\index.ts:1455:23)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Object.require.extensions.<computed> [as .ts] (C:\Users\dimam\OneDrive\Рабочий стол\laba4\node_modules\ts-node\src\index.ts:1458:12)
+    at Module.load (node:internal/modules/cjs/loader:981:32) {"date":"Fri Jun 03 2022 19:04:17 GMT+0300 (Москва, стандартное время)","error":{"address":"::","code":"EADDRINUSE","errno":-4091,"port":4000,"syscall":"listen"},"exception":true,"os":{"loadavg":[0,0,0],"uptime":1530303},"process":{"argv":["C:\\Program Files\\nodejs\\node.exe","C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts"],"cwd":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4","execPath":"C:\\Program Files\\nodejs\\node.exe","gid":null,"memoryUsage":{"arrayBuffers":2434491,"external":5664419,"heapTotal":154935296,"heapUsed":126658632,"rss":192102400},"pid":7660,"uid":null,"version":"v18.2.0"},"stack":"Error: listen EADDRINUSE: address already in use :::4000\n    at Server.setupListenHandle [as _listen2] (node:net:1380:16)\n    at listenInCluster (node:net:1428:12)\n    at Server.listen (node:net:1516:7)\n    at Function.listen (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\express\\lib\\application.js:618:24)\n    at Object.<anonymous> (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts:8:5)\n    at Module._compile (node:internal/modules/cjs/loader:1105:14)\n    at Module.m._compile (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts:1455:23)\n    at Module._extensions..js (node:internal/modules/cjs/loader:1159:10)\n    at Object.require.extensions.<computed> [as .ts] (C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts:1458:12)\n    at Module.load (node:internal/modules/cjs/loader:981:32)","trace":[{"column":16,"file":"node:net","function":"Server.setupListenHandle [as _listen2]","line":1380,"method":"setupListenHandle [as _listen2]","native":false},{"column":12,"file":"node:net","function":"listenInCluster","line":1428,"method":null,"native":false},{"column":7,"file":"node:net","function":"Server.listen","line":1516,"method":"listen","native":false},{"column":24,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\express\\lib\\application.js","function":"Function.listen","line":618,"method":"listen","native":false},{"column":5,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\src\\server.ts","function":null,"line":8,"method":null,"native":false},{"column":14,"file":"node:internal/modules/cjs/loader","function":"Module._compile","line":1105,"method":"_compile","native":false},{"column":23,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts","function":"Module.m._compile","line":1455,"method":"_compile","native":false},{"column":10,"file":"node:internal/modules/cjs/loader","function":"Module._extensions..js","line":1159,"method":".js","native":false},{"column":12,"file":"C:\\Users\\dimam\\OneDrive\\Рабочий стол\\laba4\\node_modules\\ts-node\\src\\index.ts","function":"Object.require.extensions.<computed> [as .ts]","line":1458,"method":"ts]","native":false},{"column":32,"file":"node:internal/modules/cjs/loader","function":"Module.load","line":981,"method":"load","native":false}]}
+error: undefined {"address":"::","code":"EADDRINUSE","errno":-4091,"port":4000,"syscall":"listen"}
+error: error
